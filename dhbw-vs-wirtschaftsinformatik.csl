@@ -12,7 +12,7 @@
       <email>alexander.riedlinger@web.de</email>
     </author>
     <category citation-format="note"/>
-    <updated>2023-10-25T11:12:39+00:00</updated>
+    <updated>2023-10-25T13:12:50+00:00</updated>
     <rights>This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 License</rights>
   </info>
   <locale xml:lang="de">
@@ -28,11 +28,12 @@
       <term name="editortranslator" form="verb-short">Hrsg.</term>
       <term name="number-of-volumes" form="short">Aufl.</term>
       <term name="accessed" form="long">Datum des Zugriffs</term>
+      <term name="issue" form="short">H.</term>
       <term name="et-al">et al.</term>
     </terms>
   </locale>
   <macro name="contributor-long">
-    <names variable="author" display="indent">
+    <names variable="author">
       <name delimiter="; " delimiter-precedes-et-al="never" name-as-sort-order="all"/>
       <label form="short" text-case="capitalize-first" prefix=" (" suffix=")"/>
       <substitute>
@@ -97,7 +98,7 @@
   <macro name="point-locators">
     <choose>
       <if variable="page">
-        <label variable="locator" form="short" prefix=", hier: "/>
+        <label prefix="," variable="locator" form="short"/>
         <text variable="locator" prefix=" "/>
       </if>
       <else>
@@ -107,7 +108,7 @@
     </choose>
   </macro>
   <macro name="pages">
-    <label text-case="capitalize-first" suffix=" " variable="page" form="short"/>
+    <label plural="never" text-case="capitalize-first" suffix=" " variable="page" form="short"/>
     <text variable="page" prefix=" "/>
   </macro>
   <macro name="edition">
@@ -158,18 +159,17 @@
           <date date-parts="year" form="numeric" variable="issued"/>
           <text macro="pages"/>
         </group>
-        <text macro="point-locators"/>
       </group>
     </layout>
   </citation>
-  <bibliography et-al-min="3" et-al-use-first="1" entry-spacing="1" line-spacing="1">
+  <bibliography et-al-min="3" et-al-use-first="1" line-spacing="1.5">
     <sort>
       <key variable="author"/>
       <key variable="issued"/>
     </sort>
     <layout suffix=".">
       <text macro="contributor-long" display="block"/>
-      <group display="right-inline" delimiter=",">
+      <group display="left-margin" delimiter=",">
         <group delimiter=" ">
           <text macro="title-short" prefix="(" suffix=")"/>
           <text macro="title"/>
