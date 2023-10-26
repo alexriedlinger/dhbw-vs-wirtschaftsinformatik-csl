@@ -12,7 +12,7 @@
       <email>alexander.riedlinger@web.de</email>
     </author>
     <category citation-format="note"/>
-    <updated>2023-10-25T13:12:50+00:00</updated>
+    <updated>2023-10-26T08:56:56+00:00</updated>
     <rights>This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 License</rights>
   </info>
   <locale xml:lang="de">
@@ -112,17 +112,10 @@
     <text variable="page" prefix=" "/>
   </macro>
   <macro name="edition">
-    <choose>
-      <if match="any" is-numeric="edition">
-        <group>
-          <group delimiter=". "/>
-          <label variable="edition" form="short"/>
-        </group>
-      </if>
-      <else>
-        <text variable="edition" prefix=", "/>
-      </else>
-    </choose>
+    <group>
+      <text variable="edition" suffix=". "/>
+      <label variable="edition" form="short"/>
+    </group>
   </macro>
   <macro name="serie-with-number">
     <group delimiter=", ">
