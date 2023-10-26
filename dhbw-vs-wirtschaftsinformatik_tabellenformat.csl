@@ -26,7 +26,7 @@
       <term name="editortranslator" form="verb">Hrsg.</term>
       <term name="editortranslator" form="verb-short">Hrsg.</term>
       <term name="number-of-volumes" form="short">Aufl.</term>
-      <term name="accessed" form="long">Datum des Zugriffs</term>
+      <term name="accessed" form="long">Zugriff</term>
       <term name="issue" form="short">H.</term>
       <term name="et-al">et al.</term>
     </terms>
