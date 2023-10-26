@@ -1,6 +1,5 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <style xmlns="http://purl.org/net/xbiblio/csl" class="note" version="1.0" et-al-min="3" et-al-use-first="1" demote-non-dropping-particle="sort-only" default-locale="de-DE">
-  <!-- This style was edited with the Visual CSL Editor (https://editor.citationstyles.org/visualEditor/) -->
   <info>
     <title>DHBW VS Wirtschaftsinformatik</title>
     <title-short>DHBW_VS_WI</title-short>
@@ -12,7 +11,7 @@
       <email>alexander.riedlinger@web.de</email>
     </author>
     <category citation-format="note"/>
-    <updated>2023-10-25T19:11:22+00:00</updated>
+    <updated>2023-10-26T09:04:16+00:00</updated>
     <rights>This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 License</rights>
   </info>
   <locale xml:lang="de">
@@ -112,17 +111,10 @@
     <text variable="page" prefix=" "/>
   </macro>
   <macro name="edition">
-    <choose>
-      <if match="any" is-numeric="edition">
-        <group>
-          <group delimiter=". "/>
-          <label variable="edition" form="short"/>
-        </group>
-      </if>
-      <else>
-        <text variable="edition" prefix=", "/>
-      </else>
-    </choose>
+    <group>
+      <text variable="edition" suffix=". "/>
+      <label variable="edition" form="short"/>
+    </group>
   </macro>
   <macro name="serie-with-number">
     <group delimiter=", ">
@@ -162,7 +154,7 @@
       </group>
     </layout>
   </citation>
-  <bibliography et-al-min="3" et-al-use-first="1">
+  <bibliography et-al-min="3" et-al-use-first="1" line-spacing="1">
     <sort>
       <key variable="author"/>
       <key variable="issued"/>
