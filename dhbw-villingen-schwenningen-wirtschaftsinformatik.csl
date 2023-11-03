@@ -173,7 +173,6 @@
           </if>
           <else-if type="chapter" match="any">
             <group delimiter=", ">
-              <text macro="container-title"/>
               <group>
                 <text term="in" text-case="capitalize-first" prefix=" " suffix=": "/>
                 <text variable="container-title"/>
@@ -195,7 +194,6 @@
             <group>
               <text macro="editor"/>
               <group delimiter=", ">
-                <text macro="container-title"/>
                 <text variable="part-title"/>
                 <date form="text" variable="issued" prefix=" "/>
                 <text variable="URL" prefix=" " suffix=" "/>
@@ -207,7 +205,6 @@
             <group delimiter=", " prefix=", ">
               <group delimiter=" ">
                 <text term="in" suffix=":"/>
-                <text macro="container-title"/>
               </group>
               <date date-parts="year" form="numeric" variable="issued"/>
               <text macro="pages" prefix=" "/>
