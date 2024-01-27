@@ -1,6 +1,6 @@
 # **Zotero-Stil (CSL-Datei) Wirtschaftsinformatik  DHBW Villingen-Schwenningen**
 
-Diese CSL-Datei ist für das Fach Wirtschaftsinformatik an der DHBW Villingen-Schwenningen geeignet und kann mit **Zotero** und ähnlichen Literaturverwaltungstools verwendet werden.
+Diese CSL-Datei ist an die Vorgaben des Studiengangs Wirtschaftsinformatik an der DHBW Villingen-Schwenningen angepasst und kann mit **Zotero** und ähnlichen Literaturverwaltungstools verwendet werden.
 
 ## **Installation**
 
